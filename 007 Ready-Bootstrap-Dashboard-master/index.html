@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Ready Bootstrap Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/ready.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <style>
+		.logo-header {
+    		background-color: #23272a; /* Dark background color */
+    		border-bottom: 1px solid #444; /* Optional: Add a border for separation */
+		}
+		.logo-header .logo img {
+    		filter: brightness(0) invert(1); /* Optional: Invert logo colors for better visibility */
+		}
+        body {
+            background-color: #2c2f33;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #23272a;
+        }
+        .sidebar {
+            background-color: #23272a;
+        }
+        .card {
+            background-color: #3c3f41;
+            border: none;
+        }
+        .card-header {
+            background-color: #2c2f33;
+            border-bottom: 1px solid #444;
+        }
+        .table {
+            background-color: #3c3f41;
+            color: #ffffff;
+        }
+        .table th, .table td {
+            border-color: #444;
+        }
+        .footer {
+            background-color: #23272a;
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #7289da;
+            border-color: #7289da;
+        }
+        .btn-primary:hover {
+            background-color: #5b6eae;
+            border-color: #5b6eae;
+        }
+        .badge {
+            background-color: #7289da;
+        }
+        .dropdown-menu {
+            background-color: #3c3f41;
+        }
+        .dropdown-item {
+            color: #ffffff;
+        }
+        .dropdown-item:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-header">
+			<div class="logo-header">
+				<a href="index.html" class="logo">
+					<img src="assets/img/a.png" alt="DashBord" width="50" height="50">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+            <nav class="navbar navbar-header navbar-expand-lg">
+                <div class="container-fluid">
+                    <form class="navbar-left navbar-form nav-search mr-md-3" action="">
+                        <div class="input-group">
+                            <input type="text" placeholder="Type to search" class="form-control">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="la la-search search-icon"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                        <li class="nav-item dropdown hidden-caret">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/img/a1.png">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown hidden-caret">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="la la-bell"></i>
+                                <span class="notification">3</span>
+                            </a>
+                            <ul class="dropdown-menu notif-box" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <div class="dropdown-title">You have 4 new notification</div>
+                                </li>
+                                <li>
+                                    <div class="notif-center">
+                                        <a href="#">
+                                            <div class="notif-icon notif-primary"> <i class="la la-user-plus"></i> </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    New user registered
+                                                </span>
+                                                <span class="time">5 minutes ago</span> 
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="notif-icon notif-success"> <i class="la la-comment"></i> </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    Rahmad commented on Admin
+                                                </span>
+                                                <span class="time">12 minutes ago</span> 
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="notif-img"> 
+                                                <img src="assets/img/profile2.jpg" alt="Img Profile">
+                                            </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    Reza send messages to you
+                                                </span>
+                                                <span class="time">12 minutes ago</span> 
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="notif-icon notif-danger"> <i class="la la-heart"></i> </div>
+                                            <div class="notif-content">
+                                                <span class="block">
+                                                    Farrah liked Admin
+                                                </span>
+                                                <span class="time">17 minutes ago</span> 
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="see-all" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="la la-angle-right"></i> </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg" alt="user-img" width="36" class="img-circle"><span >Hizrian</span></span> </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <div class="user-box">
+                                        <div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+                                        <div class="u-text">
+                                            <h4>Hizrian</h4>
+                                            <p class="text-muted">hello@themekita.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"></i> My Balance</a>
+                                    <a class="dropdown-item" href="#"><i class="ti-email"></i> Inbox</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="ti-settings"></i> Account Setting</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                                </ul>
+                                <!-- /.dropdown-user -->
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="sidebar">
+                <div class="scrollbar-inner sidebar-wrapper">
+                    <ul class="nav">
+                        <li class="nav-item active">
+                            <a href="index.html">
+                                <i class="la la-dashboard"></i>
+                                <p>Home</p>
+                                <span class="badge badge-count">5</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="components.html">
+                                <i class="la la-table"></i>
+                                <p>Issues</p>
+                                <span class="badge badge-count">14</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="forms.html">
+                                <i class="la la-keyboard-o"></i>
+                                <p>Pull requests</p>
+                                <span class="badge badge-count">50</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="tables.html">
+                                <i class="la la-th"></i>
+                                <p>Projects</p>
+                                <span class="badge badge-count">6</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="notifications.html">
+                                <i class="la la-bell"></i>
+                                <p>Discussions</p>
+                                <span class="badge badge-success">3</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="typography.html">
+                                <i class="la la-font"></i>
+                                <p>Codespaces</p>
+                                <span class="badge badge-danger">25</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="icons.html">
+                                <i class="la la-fonticons"></i>
+                                <p>Copilot</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="main-panel">
+                <div class="content">
+					<div class="container-fluid">
+						<h4 class="page-title">Dashboard</h4>
+						<div class="row">
+							<div class="col-md-3">
+								<div class="card card-stats">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-code-branch"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Pull Requests</p>
+													<h4 class="card-title">42</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card card-stats">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-exclamation-triangle"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Issues</p>
+													<h4 class="card-title">15</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card card-stats">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-folder"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Repositories</p>
+													<h4 class="card-title">8</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="card card-stats">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-5">
+												<div class="icon-big text-center">
+													<i class="la la-star"></i>
+												</div>
+											</div>
+											<div class="col-7 d-flex align-items-center">
+												<div class="numbers">
+													<p class="card-category">Stars</p>
+													<h4 class="card-title">120</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+						<!-- Repositories Section -->
+						<div class="row mt-4">
+							<div class="col-md-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Repositories</h4>
+									</div>
+									<div class="card-body">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<a href="#" class="repo-link">Repository 1</a>
+												<span class="badge badge-primary float-right">Updated 2 days ago</span>
+											</li>
+											<li class="list-group-item">
+												<a href="#" class="repo-link">Repository 2</a>
+												<span class="badge badge-primary float-right">Updated 5 days ago</span>
+											</li>
+											<li class="list-group-item">
+												<a href="#" class="repo-link">Repository 3</a>
+												<span class="badge badge-primary float-right">Updated 1 week ago</span>
+											</li>
+											<li class="list-group-item">
+												<a href="#" class="repo-link">Repository 4</a>
+												<span class="badge badge-primary float-right">Updated 3 weeks ago</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Repositories Section -->
+					</div>
+                </div>
+				<footer class="footer pt-8 pb-6 f6 color-fg-muted" role="contentinfo">
+					<h2 class="sr-only">Footer</h2>
+					<div class="d-flex flex-justify-center flex-items-center flex-column-reverse flex-lg-row flex-wrap flex-lg-nowrap">
+					<div class="d-flex flex-items-center flex-shrink-0 mx-2">
+						<a aria-label="Homepage" title="GitHub" class="footer-octicon mr-2" href="https://github.com">
+						<svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-mark-github">
+					<path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+				</svg>
+				</a>
+						<span>
+						© 2025 GitHub,&nbsp;Inc.
+						</span>
+					</div>
+					<nav aria-label="Footer">
+						<h3 class="sr-only" id="sr-footer-heading">Footer navigation</h3>
+						<ul class="list-style-none d-flex flex-justify-center flex-wrap mb-2 mb-lg-0" aria-labelledby="sr-footer-heading">
+							<li class="mx-2">
+							<a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to Terms&quot;,&quot;label&quot;:&quot;text:terms&quot;}" href="https://docs.github.com/site-policy/github-terms/github-terms-of-service" data-view-component="true" class="Link--secondary Link">Terms</a>
+							</li>
+							<li class="mx-2">
+							<a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to privacy&quot;,&quot;label&quot;:&quot;text:privacy&quot;}" href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" data-view-component="true" class="Link--secondary Link">Privacy</a>
+							</li>
+							<li class="mx-2">
+							<a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to security&quot;,&quot;label&quot;:&quot;text:security&quot;}" href="https://github.com/security" data-view-component="true" class="Link--secondary Link">Security</a>
+							</li>
+							<li class="mx-2">
+							<a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to status&quot;,&quot;label&quot;:&quot;text:status&quot;}" href="https://www.githubstatus.com/" data-view-component="true" class="Link--secondary Link">Status</a>
+							</li>
+							<li class="mx-2">
+							<a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to docs&quot;,&quot;label&quot;:&quot;text:docs&quot;}" href="https://docs.github.com/" data-view-component="true" class="Link--secondary Link">Docs</a>
+							</li>
+							<li class="mx-2">
+							<a data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to contact&quot;,&quot;label&quot;:&quot;text:contact&quot;}" href="https://support.github.com?tags=dotcom-footer" data-view-component="true" class="Link--secondary Link">Contact</a>
+							</li>
+							<li class="mx-2">
+					<cookie-consent-link data-catalyst="">
+					<button type="button" class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent" data-action="click:cookie-consent-link#showConsentManagement" data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;cookies&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;cookies_link_subfooter_footer&quot;}">
+						Manage cookies
+					</button>
+					</cookie-consent-link>
+					</li>
+					<li class="mx-2">
+					<cookie-consent-link data-catalyst="">
+					<button type="button" class="Link--secondary underline-on-hover border-0 p-0 color-bg-transparent" data-action="click:cookie-consent-link#showConsentManagement" data-analytics-event="{&quot;location&quot;:&quot;footer&quot;,&quot;action&quot;:&quot;dont_share_info&quot;,&quot;context&quot;:&quot;subfooter&quot;,&quot;tag&quot;:&quot;link&quot;,&quot;label&quot;:&quot;dont_share_info_link_subfooter_footer&quot;}">
+						Do not share my personal information
+					</button>
+					</cookie-consent-link>
+					</li>
+						</ul>
+					</nav>
+					</div>
+				</footer>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="assets/js/core/popper.min.js"></script>
+<script src="assets/js/core/bootstrap.min.js"></script>
+<script src="assets/js/plugin/chartist/chartist.min.js"></script>
+<script src="assets/js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js"></script>
+<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="assets/js/plugin/jquery-mapael/maps/world_countries.min.js"></script>
+<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/js/ready.min.js"></script>
+<script src="assets/js/demo.js"></script>
+</html>
