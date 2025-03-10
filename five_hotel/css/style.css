@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background */
+}
+
+.starbucks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.starbucks-header {
+    background-color: #ffffff; /* White background for header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo size */
+}
+
+.starbucks-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.starbucks-nav li {
+    margin: 0 15px;
+}
+
+.starbucks-nav a {
+    text-decoration: none;
+    color: #006241; /* Starbucks green */
+    font-weight: bold;
+}
+
+.auth-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #006241; /* Starbucks green */
+}
+
+.starbucks-main {
+    margin-top: 20px;
+}
+
+.feature {
+    background-color: #d5dec5; /* Light green background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.feature h1, .feature h2 {
+    color: #32462f; /* Darker green for headings */
+}
+
+.feature p {
+    color: #333; /* Dark text for paragraphs */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #006241; /* Starbucks green */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #004d3d; /* Darker green on hover */
+}
+
+.starbucks-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for footer */
+    text-align: center;
+}
+
+.starbucks-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.starbucks-footer li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.starbucks-footer a {
+    text-decoration: none;
+    color: #006241; /* Starbucks green */
+}
